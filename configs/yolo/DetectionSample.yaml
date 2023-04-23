@@ -1,0 +1,6 @@
+train: ./downloads/DetectionSample/images/train
+val: ./downloads/DetectionSample/images/val
+
+# Classes
+nc: 2  # number of classes
+names: ['Player', 'Football']  # class names
