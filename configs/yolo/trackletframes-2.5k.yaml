@@ -1,0 +1,6 @@
+train: ./downloads/trackletframes-2.5k/images/train
+val: ./downloads/trackletframes-2.5k/images/val
+
+# Classes
+nc: 2  # number of classes
+names: ['Player', 'Football']  # class names
