@@ -1,0 +1,20 @@
+ultralytics>=8.0
+torch<=1.13
+torchvision>=0.13
+matplotlib>=3.2.2
+numpy>=1.18.5,<1.24.0
+opencv-python>=4.1.1
+Pillow>=7.1.2
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+tqdm>=4.41.0
+protobuf<4.21.3
+tensorboard>=2.4.1
+wandb
+pandas>=1.1.4
+seaborn>=0.11.0
+ipython  # interactive notebook
+psutil  # system utilization
+thop  # FLOPs computation
+albumentations>=1.0.3

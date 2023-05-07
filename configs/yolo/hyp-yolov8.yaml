@@ -1,0 +1,21 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# Custom training settings and hyperparameters for training
+data: configs/yolo/trackletframes-2.5k.yaml  # path to data file, i.e. i.e. coco128.yaml
+epochs: 60 # Number of epochs
+batch: 4  # number of images per batch (-1 for AutoBatch)
+imgsz: 1080  # size of input images as integer or w,h
+device: 0 # device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu
+name: yolov8_trackletframes-2.5k_fixed_res_1080 # experiment name
+
+# Hyperparameters ------------------------------------------------------------------------------------------------------
+lr0: 0.001  # initial learning rate (i.e. SGD=1E-2, Adam=1E-3)
+lrf: 0.01  # final learning rate (lr0 * lrf)
+translate: 0.05  # image translation (+/- fraction)
+scale: 0.1  # image scale (+/- gain)
+shear: 0.0  # image shear (+/- deg)
+perspective: 0.0  # image perspective (+/- fraction), range 0-0.001
+flipud: 0.0  # image flip up-down (probability)
+fliplr: 0.5  # image flip left-right (probability)
+mosaic: 0.1  # image mosaic (probability)
+mixup: 0.0  # image mixup (probability)
+copy_paste: 0.0  # segment copy-paste (probability)

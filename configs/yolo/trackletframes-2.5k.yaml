@@ -1,5 +1,6 @@
-train: ./downloads/trackletframes-2.5k/images/train
-val: ./downloads/trackletframes-2.5k/images/val
+path: /home/sn3007/FootballPassPrediction/downloads/trackletframes-2.5k/
+train: images/train #relative to path
+val: images/val #relative to path
 
 # Classes
 nc: 2  # number of classes
