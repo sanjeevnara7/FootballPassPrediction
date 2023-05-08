@@ -1,9 +1,9 @@
 ultralytics>=8.0
-torch<=1.13
+torch<=1.13.0
 torchvision>=0.13
 matplotlib>=3.2.2
 numpy>=1.18.5,<1.24.0
-opencv-python>=4.1.1
+opencv-python>=4.1.2
 Pillow>=7.1.2
 PyYAML>=5.3.1
 requests>=2.23.0
@@ -18,3 +18,9 @@ ipython  # interactive notebook
 psutil  # system utilization
 thop  # FLOPs computation
 albumentations>=1.0.3
+
+# Perspective Transform -----------------------
+pyflann-py3
+
+# Clustering -----------------------
+clustimage
