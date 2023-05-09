@@ -5,11 +5,11 @@ epochs: 60 # Number of epochs
 batch: 4  # number of images per batch (-1 for AutoBatch)
 imgsz: 1080  # size of input images as integer or w,h
 device: 0 # device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu
-name: yolov8l_soccerpass_fixed_res_1080_v2 # experiment name
+name: yolov8l_soccerpass_fixed_res_1080 # experiment name
 
 # Hyperparameters ------------------------------------------------------------------------------------------------------
-lr0: 0.0001  # initial learning rate (i.e. SGD=1E-2, Adam=1E-3)
-lrf: 0.001  # final learning rate (lr0 * lrf)
+lr0: 0.001  # initial learning rate (i.e. SGD=1E-2, Adam=1E-3)
+lrf: 0.01  # final learning rate (lr0 * lrf)
 translate: 0.05  # image translation (+/- fraction)
 scale: 0.1  # image scale (+/- gain)
 shear: 0.0  # image shear (+/- deg)

@@ -4,8 +4,8 @@ train: images/train #relative to path
 val: images/val #relative to path
 
 # YOLOv7
-#train: downloads/SoccerPass/SoccerPass-YOLO/images/train
-#val: downloads/SoccerPass/SoccerPass-YOLO/images/val
+# train: downloads/SoccerPass/SoccerPass-YOLO/images/train
+# val: downloads/SoccerPass/SoccerPass-YOLO/images/val
 
 # Classes
 nc: 2  # number of classes
