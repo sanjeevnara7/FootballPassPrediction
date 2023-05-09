@@ -1,6 +1,11 @@
+# YOLOv8
 path: /home/sn3007/FootballPassPrediction/downloads/SoccerPass/SoccerPass-YOLO/
 train: images/train #relative to path
 val: images/val #relative to path
+
+# YOLOv7
+#train: downloads/SoccerPass/SoccerPass-YOLO/images/train
+#val: downloads/SoccerPass/SoccerPass-YOLO/images/val
 
 # Classes
 nc: 2  # number of classes
