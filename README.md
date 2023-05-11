@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/python-3.9-green" /> <img src="https://img.shields.io/badge/torch-1.13.0-orange" /> <img src="https://img.shields.io/badge/PyG-2.3-blue" /><br>
 
 <p align="center">
-    <img src="https://github.com/sanjeevnara7/FootballPassPrediction/blob/main/figures/pred_gif_readme.gif" width="60%">
+    <img src="https://github.com/sanjeevnara7/FootballPassPrediction/blob/main/figures/pred_readme_gif_alt" width="60%">
 </p>
 We propose a multi-stage system for Football/Soccer Pass Receiver Prediction. The system consists of 4 major stages: <br>
 <ol>
