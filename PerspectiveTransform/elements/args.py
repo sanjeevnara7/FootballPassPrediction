@@ -1,4 +1,5 @@
 import os
+import torch
 
 
 class Args:
@@ -34,7 +35,7 @@ class Args:
     self.resize_or_crop='resize_and_crop'
     self.no_flip=True
     self.init_type='normal'
-    self.name=os.path.join(self.base_path, 'weights/pytorch-two-GAN-models/soccer_seg_detection_pix2pix')
+    self.name=os.path.join(self.base_path, 'PerspectiveTransform/weights/pytorch-two-GAN-models/soccer_seg_detection_pix2pix')
 
     # Test Options
     self.ntest=float("inf")
@@ -46,4 +47,7 @@ class Args:
     self.initialized = True
     self.continue_train=False
     
-    self.gpu_ids=[]
+    if torch.cuda.is_available():
+        self.gpu_ids=[0]
+    else:
+        self.gpu_ids=[]

@@ -18,7 +18,7 @@ class IouUtil:
         return im_dst
 
     @staticmethod
-    def template_to_image_homography_uot(camera, template_h=74, template_w=115):
+    def template_to_image_homography_uot(camera, template_h=68, template_w=105):
         """
         Only for UofT soccer model
         camera: measured in meter
@@ -31,7 +31,7 @@ class IouUtil:
         :param template_w:
         :return: a homography matrix from template to image
         """
-        assert (template_h, template_w) == (74, 115)
+        assert (template_h, template_w) == (68, 105)
 
         yard2meter = 0.9144
 
@@ -49,7 +49,7 @@ class IouUtil:
         return h
 
     @staticmethod
-    def iou_on_template_uot(gt_h, pred_h, im_h=720, im_w=1280, template_h=74, template_w=115):
+    def iou_on_template_uot(gt_h, pred_h, im_h=720, im_w=1280, template_h=68, template_w=105):
         im = np.ones((im_h, im_w, 3), dtype=np.uint8) * 255
         gt_mask = IouUtil.homography_warp(np.linalg.inv(gt_h), im, (template_w, template_h), (0))
         pred_mask = IouUtil.homography_warp(np.linalg.inv(pred_h), im, (template_w, template_h), (0))

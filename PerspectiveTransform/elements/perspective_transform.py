@@ -25,7 +25,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class Perspective_Transform():
     def __init__(self, opt):
         self.query_index = 0
-        self.current_directory = os.path.join(os.getcwd(), 'weights') 
+        self.current_directory = os.path.join(os.getcwd(), 'PerspectiveTransform/weights') 
 
         # Deep features
         deep_database_directory = os.path.join(self.current_directory, "data/deep/feature_camera_91k.mat")
@@ -52,8 +52,8 @@ class Perspective_Transform():
         model_points = data['points']
         model_line_index = data['line_segment_index']
 
-        template_h = 74  # yard, soccer template
-        template_w = 115
+        template_h = 68  # yard, soccer template
+        template_w = 105
         
         # retrieve a camera using deep features
         flann = pyflann.FLANN()
@@ -90,7 +90,7 @@ class Perspective_Transform():
         h_retrieved_to_query = SyntheticUtil.find_transform(retrieved_dist, query_dist)
 
         refined_h = h_retrieved_to_query@retrieved_h
-        Warp_img = cv2.warpPerspective(seg_map, np.linalg.inv(refined_h), (115,74), borderMode=cv2.BORDER_CONSTANT)
+        Warp_img = cv2.warpPerspective(seg_map, np.linalg.inv(refined_h), (105,68), borderMode=cv2.BORDER_CONSTANT)
 
         return np.linalg.inv(refined_h), Warp_img
 
