@@ -19,7 +19,7 @@ We propose a multi-stage system for Football/Soccer Pass Receiver Prediction. Th
 
 ## Dataset:
 We develop a new dataset nicknamed **'SoccerPass'** to train/evaluate our system. The dataset is loosely based on data collected from the [SoccerNetv2 database](https://www.soccer-net.org/data). The SoccerPass dataset is constructed by hand-picking passing frames from over 30 top European broadcast matches. The matches cover a wide range of teams and competitions such as English Premier League, Bundesliga, French Ligue 1 and UEFA Champions League. We selected $\sim1.2$k frames where a pass was about to be performed, and annotate each image with the desired attributes. <br>
-#### Our dataset can be found at [this link](https://drive.google.com/drive/folders/19VYIeUQN9b_BN69X3NcEvwYPj1Ba0wIl?usp=share_link).
+#### Dataset Link: [Google Drive](https://drive.google.com/drive/folders/1a5JpuYKsLh55OiFI4LTNhZs2rEi-42rN?usp=sharing).
 <br>
 
 ## Organization:
@@ -42,7 +42,7 @@ We develop a new dataset nicknamed **'SoccerPass'** to train/evaluate our system
 `/PerspectiveTransform` - Contains code for perspective transform based on [this original implementation](https://github.com/FootballAnalysis/footballanalysis/tree/main/Perspective%20Transformation) <br>
 `/yolomodels` - Contains build + training code for YOLOv7,v8 models based on original implementations <br>
 
-## Collaborators:
+## Ownership:
 
 #### Sanjeev Narasimhan | sn3007@columbia.edu
 #### Pranav Deevi | pid2104@columbia.edu
